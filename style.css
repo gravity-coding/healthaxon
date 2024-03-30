@@ -1,0 +1,340 @@
+@font-face {
+  font-family: FontOne;
+  src: url(./Fonts/foundersgrotesk-light-webfont.ttf);
+}
+@font-face {
+  font-family: FontTwo;
+  src: url(./Fonts/heldanetextregular-webfont.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* ----------main---------------- */
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: rgb(44, 147, 216); */
+}
+
+header {
+  position: relative;
+}
+
+header,
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #f6f5f1;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 15vw;
+  z-index: 99;
+}
+
+nav img {
+  width: 10vw;
+}
+
+.ri-menu-3-line {
+  font-size: 2vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15vw;
+  padding: 0vw 15vw;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  background-color: #f6f5f1;
+}
+
+.cir-menu {
+  width: 25vw;
+  height: 25vw;
+  background-image: url(https://images.unsplash.com/photo-1711470053377-bdd52fdba484?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2vh;
+}
+
+.menu-links a {
+  font-family: FontTwo;
+  font-size: 2vw;
+  color: #333;
+  text-decoration: none;
+  text-align: left;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.ri-close-fill {
+  font-size: 2vw;
+  display: none;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.hero-section {
+  width: 100%;
+  height: 90vh;
+  background-color: #f6f5f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.mainheading {
+  font-family: FontTwo;
+  font-size: 2.5vw;
+  width: 40%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.who-we-are {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f6f5f1;
+}
+
+.who-we-are p {
+  width: 45%;
+  font-size: 1.1vw;
+  font-family: FontOne;
+  text-align: center;
+}
+
+.who-we-are .clouds {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.who-we-are .clouds img:nth-child(2) {
+  width: 15vw;
+  margin-right: -10vw;
+  margin-top: 5vh;
+}
+
+.partner {
+  width: 100%;
+  height: 100vh;
+  gap: 5vh;
+  background-color: #f6f5f1;
+}
+
+.cards {
+  gap: 2vw;
+  width: 100%;
+  height: 30vh;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-c {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  gap: 4vh;
+  width: 25vw;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+.card h1 {
+  font-size: 5vw;
+  font-family: FontTwo;
+}
+
+.card p {
+  font-size: 1vw;
+}
+
+.our-mission {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f5f1;
+  gap: 5vh;
+}
+
+.our-mission-p {
+  font-size: 0.9vw;
+  width: 50%;
+  text-align: center;
+}
+
+.mission-section {
+  gap: 5vw;
+  width: 100%;
+  height: 70vh;
+}
+
+.lft-video {
+  width: 60%;
+  height: 100%;
+  justify-content: end;
+}
+
+.rght-section {
+  justify-content: start;
+  width: 40%;
+  height: 100%;
+  gap: 10vh;
+  padding-top: 10vh;
+  overflow: auto;
+}
+
+.scroll-section {
+  width: 100%;
+  align-items: start;
+}
+
+.scroll-section p {
+  width: 50%;
+}
+
+.scroll-section .mainheading {
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  nav img {
+    width: 30vw;
+  }
+  .ri-menu-3-line {
+    font-size: 7vw;
+  }
+  .ri-close-fill {
+    font-size: 7vw;
+  }
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cir-menu {
+    width: 50vw;
+    height: 50vw;
+  }
+  .menu-links {
+    align-items: center;
+  }
+  .menu-links a {
+    font-size: 7vw;
+  }
+  .mainheading {
+    font-size: 9vw;
+    width: 85%;
+  }
+  .hero-section {
+    overflow: hidden;
+  }
+  .hero-section video {
+    width: 120%;
+  }
+  .who-we-are {
+    gap: 3vh;
+    height: 100vh;
+  }
+  .who-we-are p {
+    width: 70%;
+    font-size: 5vw;
+  }
+  .who-we-are .clouds {
+    width: 70%;
+  }
+  .who-we-are .clouds img:nth-child(1) {
+    width: 19vw;
+    margin-right: 5vw;
+    margin-top: 1vh;
+  }
+  .who-we-are .clouds img:nth-child(2) {
+    width: 32vw;
+    margin-right: -5vw;
+    margin-top: 1vh;
+  }
+  .who-we-are video {
+    width: 80%;
+  }
+  .cards {
+    flex-direction: column;
+    height: 55vh;
+    gap: 5vh;
+  }
+  .card {
+    width: 60vw;
+    gap: 2vh;
+  }
+  .card h1 {
+    font-size: 10vw;
+  }
+  .card p {
+    font-size: 3vw;
+  }
+  .our-mission-p {
+    width: 70%;
+    font-size: 5vw;
+    font-family: FontTwo;
+  }
+  .mission-section {
+    flex-direction: column;
+  }
+  .lft-video {
+    width: 100%;
+    justify-content: center;
+  }
+  .lft-video video {
+    width: 90%;
+  }
+  .rght-section {
+    width: 100%;
+  }
+  .scroll-section {
+    align-items: center;
+  }
+  .scroll-section .mainheading {
+    text-align: center;
+    margin-left: -5vw;
+  }
+}
